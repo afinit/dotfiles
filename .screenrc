@@ -38,4 +38,6 @@ screen    -t zsh	3 /bin/zsh
 screen    -t zsh	4 /bin/zsh
 screen    -t zsh	5 /bin/zsh
 screen    -t zsh	6 /bin/zsh
-screen    -t top	7	top
+screen    -t zsh	7 /bin/zsh
+screen    -t zsh	8 /bin/zsh
+screen    -t top	9	top
