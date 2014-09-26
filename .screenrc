@@ -2,7 +2,7 @@ escape ``
 
 
 # bind F10 to Screen's quit command
-bindkey -k k; quit
+#bindkey -k k; quit
 
 #add scroll feature
 termcapinfo xterm* ti@:te@
