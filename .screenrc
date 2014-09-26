@@ -1,0 +1,41 @@
+escape ``
+
+
+# bind F10 to Screen's quit command
+bindkey -k k; quit
+
+#add scroll feature
+termcapinfo xterm* ti@:te@
+
+# ctl+left and ctl+right change screen tabs
+bindkey "^[Od" prev  # change window with ctrl-left
+bindkey "^[Oc" next  # change window with ctrl-right
+
+#change the hardstatus settings to give an window list at the bottom of the
+#screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline 
+hardstatus string '%{= kR}*** %{= kw}%?%-Lw%?%{B}%n*%f%t%?(%u)%?%{w}%?%+Lw%?%?%= %{R}***%{B} %m/%d %{W}%c %{R}***'
+
+bind c screen 1 # Window numbering starts at 1, not 0.
+
+bind 0 select 10
+# make life easier, f1-f10 selects screens 0-9
+bindkey -k k1 select 0
+bindkey -k k2 select 1
+bindkey -k k3 select 2
+bindkey -k k4 select 3
+bindkey -k k5 select 4
+bindkey -k k6 select 5
+bindkey -k k7 select 6
+bindkey -k k8 select 7
+bindkey -k k9 select 8
+bindkey -k k0 select 9
+
+screen    -t zsh	0 /bin/zsh
+screen    -t zsh	1 /bin/zsh
+screen    -t zsh	2 /bin/zsh
+screen    -t zsh	3 /bin/zsh
+screen    -t zsh	4 /bin/zsh
+screen    -t zsh	5 /bin/zsh
+screen    -t zsh	6 /bin/zsh
+screen    -t top	7	top
