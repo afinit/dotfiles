@@ -30,12 +30,7 @@ RPROMPT='[%*]'
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[magenta]%}(%{$fg_no_bold[yellow]%}%B"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_bold[magenta]%})%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_ADDED="✚"
-ZSH_THEME_GIT_PROMPT_MODIFIED="✹"
-ZSH_THEME_GIT_PROMPT_DELETED="✖"
-ZSH_THEME_GIT_PROMPT_RENAMED="➜"
-ZSH_THEME_GIT_PROMPT_UNMERGED="═"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="✭"
+ZSH_THEME_GIT_PROMPT_DIRTY="*"
 #ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} ✚"
 #ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%} ✹"
 #ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✖"
@@ -57,6 +52,6 @@ export PATH=$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 source ~/perl5/perlbrew/etc/bashrc
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
-alias ll="ls -la"
+alias ll="ls -lah"
 alias lt="ls -ltrh"
 
