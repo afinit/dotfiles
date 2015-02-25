@@ -36,6 +36,6 @@ Thumbs.db
 
 # vim swap files #
 ##################
-.swp
-.swo
-.swl
+*.swp
+*.swo
+*.swl
