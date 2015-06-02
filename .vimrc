@@ -1,6 +1,6 @@
 set nocompatible               " dump the old fashioned vi support!
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
-set backup                     " keep a backup file
+"set backup                     " keep a backup file
 set backupdir=~/.backup        " custom backup directory
 set history=100                " keep 100 lines of command line history
 set ruler                      " show the cursor position all the time
