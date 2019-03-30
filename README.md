@@ -3,10 +3,13 @@
 After cloning repo, run the following at the command line:
 
 ```
-ln -s ~/dotfiles/.vimrc ~/
+ln -s $HOME/dotfiles/.zshrc ~/
+ln -s $HOME/dotfiles/.gitignore_global ~/
 
-mkdir ~/.vim
-ln -s ~/dotfiles/autoload/ ~/.vim
-ln -s ~/dotfiles/colors/ ~/.vim
-ln -s ~/dotfiles/bundle/ ~/.vim
+ln -s $HOME/dotfiles/.config/nvim ~/.config
+ln -s $HOME/dotfiles/.config/i3 ~/.config
+ln -s $HOME/dotfiles/.config/i3status ~/.config
+
+ln -s $HOME/dotfiles/.Xresources ~/
+ln -s $HOME/dotfiles/.xinitrc ~/
 ```

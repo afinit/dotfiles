@@ -1,0 +1,41 @@
+xterm*translations: #override \
+                 Shift <Key>Insert:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+xterm*selectToClipboard: true
+
+xterm*foreground: #f9eaff
+xterm*background: #2f2939
+
+!*VT100.font: fixed
+
+
+! URXVT
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+
+URxvt*font: xft:droid sans mono:pixelsize=14
+URxvt*boldFont: xft:droid sans mono:bold:pixelsize=14
+URxvt*scrollBar: false
+
+
+
+! XTERM
+! right hand side scrollbar...
+xterm*ScrollBar: false
+
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: false
+
+!xterm*faceName:monospace:pixelsize=14
+!xterm*faceName: DejaVu Sans Mono for Powerline 
+xterm*faceName: FuraMono Nerd Font Mono
+xterm*faceSize: 12
+

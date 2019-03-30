@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/mrka/.local/share/nvim'
+let g:netrw_dirhist_2='/home/mrka/.config/i3'
+let g:netrw_dirhist_3='/home/mrka/.config/i3status'
