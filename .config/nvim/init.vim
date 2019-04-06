@@ -16,6 +16,7 @@ set expandtab                  " expand tabs to spaces
 set incsearch                  " do incremental searching
 set hlsearch                   " highlight search terms
 set number                     " enable line numbers
+set relativenumber             " enable relative line numbers
 set showmatch                  " show matching parenthesis
 set hidden                     " allow hidden buffers with unsaved changes
 set whichwrap+=<,>,[,]         " allow arrow keys to line wrap
@@ -24,8 +25,28 @@ set wildignore+=*.pui,*.prj    " ignore these when completing file or directory 
 set ttyfast                    " faster terminal updates
 set virtualedit+=block         " allow virtual-block select to go past end of lines
 
+set autoindent                 " newline indents to level of current line
+set shiftround                 " shifts to next multiple of shiftwidth
+set showbreak=↪\ 
+set list
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+
 
 syntax on                      " enable syntax highlighting
 filetype plugin indent on      " enable file type detection
 
 set t_Co=256
+
+silent! if plug#begin('~/.vim/plugged')
+
+" Edit
+Plug 'tpope/vim-surround'
+
+" Appearance
+Plug 'itchyny/lightline.vim'
+
+" Git
+Plug 'airblade/vim-gitgutter'
+
+call plug#end()
+endif
