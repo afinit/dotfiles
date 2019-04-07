@@ -37,10 +37,16 @@ filetype plugin indent on      " enable file type detection
 
 set t_Co=256
 
+" Plugins
 silent! if plug#begin('~/.vim/plugged')
+
+" NERDTree
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'albfan/nerdtree-git-plugin'
 
 " Edit
 Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
 
 " Appearance
 Plug 'itchyny/lightline.vim'
@@ -50,3 +56,8 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 endif
+
+
+" NERDTree config
+nmap <silent> <leader>nt :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.swp$']
