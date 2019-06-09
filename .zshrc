@@ -22,6 +22,3 @@ alias vim="nvim"
 alias ll="ls -lah"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-eval "$(ssh-agent -s)"
-ssh-add /home/mrka/.ssh/id_rsa_github
