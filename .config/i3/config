@@ -206,6 +206,6 @@ bar {
   }
 }
 
-exec --no-startup-id i3-msg "workspace $ws2; exec firefox; workspace $ws1"
+exec --no-startup-id i3-msg "workspace $ws2; exec chromium; workspace $ws1"
 exec --no-startup-id i3-msg "workspace $ws3; exec slack; workspace $ws1"
 
