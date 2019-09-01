@@ -37,7 +37,7 @@ filetype plugin indent on      " enable file type detection
 set t_Co=256
 
 " Plugins
-silent! if plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " NERDTree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -68,7 +68,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
 call plug#end()
-endif
 
 
 " Configuration for vim-scala
