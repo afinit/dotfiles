@@ -168,6 +168,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym --release $mod+Print exec import ~/data/screenshots/$( date '+%Y-%m-%d_%H-%M-%S' )_screenshot.png
+bindsym $mod+Shift+Print exec import -window root ~/data/screenshots/$( date '+%Y-%m-%d_%H-%M-%S' )_screenshot.png
+
 
 ## SET COLORS
 set $bg-color		 #765664
