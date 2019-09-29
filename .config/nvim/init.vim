@@ -39,6 +39,11 @@ set t_Co=256
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+" COLORSCHEME
+Plug 'kyoz/purify', { 'rtp': 'vim' }
+" Plug 'ajmwagar/vim-deus'
+" Plug 'liuchengxu/space-vim-dark'
+
 " NERDTree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'albfan/nerdtree-git-plugin'
@@ -73,7 +78,10 @@ call plug#end()
 " Configuration for vim-scala
 au BufRead,BufNewFile *.sbt set filetype=scala
 
-"" LSP CONFIG
+
+"""""""""""""""""""""""
+""" LSP CONFIG ::::::::
+"""""""""""""""""""""""
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
@@ -146,6 +154,17 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+"""""""""""""""""""""""
+""" END LSP CONFIG ::::
+"""""""""""""""""""""""
+
+" Set COLORSCHEME
+colorscheme purify
+" colorscheme deus
+" colorscheme space-vim-dark
+let g:lightline = { 'colorscheme': 'purify', }
+"hi Pmenu ctermbg=138
+"hi Pmenu ctermfg=96
 
 " NERDTree config
 nmap <silent> <leader>nt :NERDTreeToggle<CR>
