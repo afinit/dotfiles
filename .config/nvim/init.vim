@@ -163,6 +163,7 @@ colorscheme purify
 " colorscheme deus
 " colorscheme space-vim-dark
 let g:lightline = { 'colorscheme': 'purify', }
+hi CocErrorSign ctermfg=208
 "hi Pmenu ctermbg=138
 "hi Pmenu ctermfg=96
 
