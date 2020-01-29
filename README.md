@@ -7,6 +7,9 @@ After cloning repo, run the following at the command line:
 ## Install powerline fonts: https://github.com/powerline/fonts
 ln -s $HOME/dotfiles/.zshrc ~/
 ln -s $HOME/dotfiles/.zprofile ~/
+
+## In order to actually use the global gitignore
+## git config --global core.excludesfile ~/.gitignore_global
 ln -s $HOME/dotfiles/.gitignore_global ~/
 
 ## Install neovim: https://github.com/neovim/neovim/wiki/Installing-Neovim
