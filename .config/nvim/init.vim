@@ -166,6 +166,8 @@ let g:lightline = { 'colorscheme': 'purify', }
 hi CocErrorSign ctermfg=208
 "hi Pmenu ctermbg=138
 "hi Pmenu ctermfg=96
+" Color for coc-highlight
+highlight CocHighlightText  guibg=#111111 ctermbg=223
 
 " NERDTree config
 nmap <silent> <leader>nt :NERDTreeToggle<CR>
