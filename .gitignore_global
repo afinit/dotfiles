@@ -41,3 +41,9 @@ Thumbs.db
 *.swl
 
 .netrwhist
+
+# metals directories for scala builds #
+#######################################
+.metals/
+.bloop/
+metals.sbt
