@@ -65,6 +65,7 @@ Plug 'pangloss/vim-javascript', {'for': 'javascript'}
 Plug 'derekwyatt/vim-scala'
 Plug 'moll/vim-node', {'for': 'node'}
 Plug 'elzr/vim-json', {'for': 'json'}
+Plug 'rust-lang/rust.vim'
 
 " Code Search
 Plug 'kien/ctrlp.vim'

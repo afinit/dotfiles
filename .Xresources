@@ -35,7 +35,8 @@ xterm*ScrollBar: false
 xterm*scrollTtyOutput: false
 
 !xterm*faceName:monospace:pixelsize=14
-!xterm*faceName: DejaVu Sans Mono for Powerline 
-xterm*faceName: FuraMono Nerd Font Mono
-xterm*faceSize: 12
+!xterm*faceName: DejaVu Sans Mono for Powerline
+xterm*faceName: Symbol Nerd Fonts Family
+!xterm*faceName: FuraMono Nerd Font Mono
+xterm*faceSize: 14
 
