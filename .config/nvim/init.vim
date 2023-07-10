@@ -57,6 +57,7 @@ Plug 'itchyny/lightline.vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " Lang
 Plug 'leafgarland/typescript-vim', {'for': 'typescript'}
@@ -163,10 +164,28 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 colorscheme purify
 " colorscheme deus
 " colorscheme space-vim-dark
-let g:lightline = { 'colorscheme': 'purify', }
+
+" Coc function for lightline coc status
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+" includes bits for coc status. comes from https://github.com/neoclide/coc.nvim/wiki/Statusline-integration
+let g:lightline = { 
+      \ 'colorscheme': 'purify', 
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'currentfunction': 'CocCurrentFunction'
+      \ },
+      \ }
 hi CocErrorSign ctermfg=208
 "hi Pmenu ctermbg=138
 "hi Pmenu ctermfg=96
+" Color for coc-highlight
+highlight CocHighlightText  guibg=#111111 ctermbg=223
 
 " NERDTree config
 nmap <silent> <leader>nt :NERDTreeToggle<CR>
