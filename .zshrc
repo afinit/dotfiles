@@ -6,7 +6,10 @@ export ZSH=$HOME/.oh-my-zsh
 
 # ZSH_THEME="steeef"
 # ZSH_THEME="xiong-chiamiov-plus"
-ZSH_THEME="tjkirch"
+ZSH_THEME="personal"
+# ZSH_THEME="jonathan"
+# ZSH_THEME="juanghurtado"
+# ZSH_THEME="kolo"
 HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(git vi-mode)
