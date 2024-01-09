@@ -49,3 +49,8 @@ metals.sbt
 
 .idea/
 .bsp/
+target/
+
+
+## pyenv
+.python-version
