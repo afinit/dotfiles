@@ -19,7 +19,7 @@ setopt prompt_subst
 
 PROMPT='%(?, ,%F{red}FAIL: $?%{$reset_color%}
 )
-%F{magenta}%n%{$reset_color%}@%F{yellow}%m %{$fg[green]%}[%*]%{$reset_color%}%{$reset_color%}: %B%F{blue}%~ %B%F{green}${vcs_info_msg_0_}%f%b
+%F{magenta}%n%{$reset_color%}@%F{yellow}%m %{$fg[green]%}[%*]%{$reset_color%}%{$reset_color%}: %B%F{blue}%~ %B%F{green}${vcs_info_msg_0_}%f%b $(kube_ps1)
 %% '
 
 autoload -U add-zsh-hook
